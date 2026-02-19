@@ -1,81 +1,102 @@
 # Heart Disease Prediction ML App 🏥❤️
 
-A **Heart Disease Prediction Web App** built using **Python**, **Streamlit**, and **Logistic Regression**.  
-Users can input patient health information and get predictions about the risk of heart disease.
+A Machine Learning web application that predicts heart disease risk using Logistic Regression with **89.27% accuracy** and **88.68% precision**.
+
+Users can input patient health information and receive real-time predictions along with confidence score and probability breakdown.
 
 ---
 
 ## Features
 
-- Predict **High Risk** or **Low Risk** of heart disease.  
-- Displays **prediction confidence (%)**.  
-- Shows **probability breakdown** for each class (No Disease vs Disease).  
-- Provides a **summary of patient inputs**.  
-- Interactive and user-friendly **Streamlit interface**.
+- Predicts **High Risk** or **Low Risk** of heart disease  
+- Displays prediction confidence (%)  
+- Shows probability breakdown (No Disease vs Disease)  
+- Provides a summary of patient inputs  
+- Interactive and user-friendly Streamlit interface  
+
+---
+
+## Model Performance
+
+- **Algorithm:** Logistic Regression  
+- **Accuracy:** 89.27%  
+- **Precision:** 88.68%  
+- Evaluated using standard classification metrics on the test dataset  
 
 ---
 
 ## Project Structure
 
+```
 heart_disease_prediction_ml_app/
-├── app.py # Main Streamlit app
-├── requirements.txt # Python libraries used
-├── logistic_regression_model.pkl # Trained ML model
-├── heart.csv # Dataset (used for feature info)
-└── README.md # Project documentation
+│
+├── app.py                         # Main Streamlit application
+├── logistic_regression_model.pkl  # Trained ML model
+├── heart.csv                      # Dataset (used for feature reference)
+├── requirements.txt               # Required Python libraries
+└── README.md                      # Project documentation
+```
 
-
+---
 
 ## Installation & Running Locally
 
-1. **Clone the repository**:
-
-```bash
+### 1️⃣ Clone the repository
+```
 git clone https://github.com/praharshithaKasoju/heart_disease_prediction_ml_app.git
 cd heart_disease_prediction_ml_app
-Install dependencies:
+```
 
-
+### 2️⃣ Install dependencies
+```
 pip install -r requirements.txt
-Run the Streamlit app:
+```
 
-
+### 3️⃣ Run the Streamlit app
+```
 streamlit run app.py
-Open your browser and go to http://localhost:8501.
+```
 
-Requirements
-text
+Then open your browser and go to:
 
-streamlit
-pandas
-numpy
-scikit-learn
-joblib
-(Save this as requirements.txt in your project folder.)
+```
+http://localhost:8501
+```
 
-How It Works
-Users enter demographic and health metrics in the sidebar.
+---
 
-Click Predict.
+## Requirements
 
-The app outputs:
+- streamlit  
+- pandas  
+- numpy  
+- scikit-learn  
+- joblib  
 
-Risk Level (High/Low)
+---
 
-Confidence (%)
+## How It Works
 
-Probability breakdown
+1. Users enter demographic and health metrics in the app interface.  
+2. Click **Predict**.  
+3. The application outputs:
+   - Risk Level (High / Low)  
+   - Confidence Percentage  
+   - Probability Breakdown  
+   - Summary of patient inputs  
 
-Summary of patient inputs
+The prediction is generated using a pre-trained Logistic Regression model.
 
-The prediction is made using a pre-trained Logistic Regression model.
+---
 
-Notes
-Make sure logistic_regression_model.pkl and heart.csv are in the same folder as app.py.
+## Notes
 
-The app currently runs locally only.
+- Ensure `logistic_regression_model.pkl` and `heart.csv` are in the same directory as `app.py`.
+- The application currently runs locally.
 
-Author
-Praharshitha Kasoju
+---
 
-GitHub: praharshithaKasoju
+## Author
+
+**Praharshitha Kasoju**  
+GitHub: https://github.com/praharshithaKasoju
